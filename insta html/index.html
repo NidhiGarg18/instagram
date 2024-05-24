@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">Instagram
+        <input type="text" placeholder="Search..">
+        <i class="fa fa-search"></i>
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-message"></i>
+    </h1>
+    <button class="below_icons">
+        <i class="fa fa-home"></i>
+        <span class="fa fa-plus"></span>
+        <i class="fa fa-user">
+        <h4><a href="account.html">Account</a></h4>
+    </i>
+        
+    </button>
+
+    <!-- <div class="slider">
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
+        
+
+    <div class="slides">
+        <div class="slide">
+            <img src="img_5.jpg" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="img_6.jpg" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="img_7.jpg" alt="Slide 3">
+        </div>
+    </div>
+
+    <div class="navigation">
+        <label for="slide1" class="nav-button"></label>
+        <label for="slide2" class="nav-button"></label>
+        <label for="slide3" class="nav-button"></label>
+        <label for="slide4" class="nav-button"></label>
+    </div>
+    </div>
+
+    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button> -->
+
+
+<div class="w3-content w3-display-container">
+
+    <div class="w3-display-container mySlides">
+    
+      <img src="img_5.jpg" style="width:80%,height=800px",>
+      <!-- <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+        French Alps
+      </div> -->
+    </div>
+    
+    
+    <div class="w3-display-container mySlides">
+      <img src="img_6.jpg" style="width:80%">
+      <!-- <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+        Northern Lights
+      </div> -->
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <img src="img_7.jpg" style="width:80%">
+      <!-- <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+        Beautiful Mountains
+      </div> -->
+    </div>
+    
+    <!-- <div class="w3-display-container mySlides">
+      <img src="img_forest.jpg" style="width:100%">
+      <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+        The Rain Forest
+      </div>
+    </div>
+    
+    <div class="w3-display-container mySlides">
+      <img src="img_mountains.jpg" style="width:100%">
+      <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+        Mountains!
+      </div>
+    </div> -->
+    <div class=slides_button>
+    <button class="slides_button_1" onclick="plusDivs(-1)"> &#10094;</button>
+    <button class="slides_button_2" onclick="plusDivs(1)">&#10095;</button>
+</div>
+    </div>
+
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+
+
+
+    <img src="img_1.jpg">
+    <div id="icons">
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-comment"></i>
+    </div>
+    <img src="img_2.jpg">
+    <div id="icons">
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-comment"></i>
+    </div>
+    <img src="img_3.jpg">
+    <div id="icons">
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-comment"></i>
+    </div>
+
+    <div id="video1">
+    <video autoplay muted loop>
+        <source src="video_1.mp4" type="video/mp4"/>
+    </video>
+    </div>
+    <div id="icons1">
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-comment"></i>
+    </div>
+
+
+    <img src="img_4.jpg">
+    <div id="icons">
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-comment"></i>
+    </div>
+
+
+
+
+    <!-- <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("slides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+ -->
+
+</body>
+</html>
